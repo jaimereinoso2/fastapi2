@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get('/inicio')
 async def ruta_de_prueba():
-    return "Hola desde FastAPI"
+    return "Hola desde FastAPI - saludando a daniel"
