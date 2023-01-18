@@ -1,2 +1,7 @@
-print("esto es un nuevo proyecto y un nuevo archivo")
-print("linea nueva desde arriba en el imac")
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/inicio')
+async def ruta_de_prueba():
+    return "Hola desde FastAPI"
